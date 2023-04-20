@@ -1,10 +1,9 @@
-# Repositório do desafio sobre padrões de projeto e framework Spring
+# Repositório do desafio sobre padrões de projeto e Spring
 
 ## Visão Geral
 
-Repositório criado para conter a implementação do desafio proposto.  
-O projeto faz parte da trilha **Ganhando Produtividade com Spring Framework** do bootcamp **Banco PAN Java Developers** da DIO.  
-O repositório apresenta a implementação de um API REST para a manipulação de dados de clientes e seus endereços.
+O repositório apresenta a implementação de um API REST para a manipulação de dados de clientes e seus endereços.O projeto foi desenvolvido com base no desafio apresentado na trilha **Ganhando Produtividade com Spring Framework** do bootcamp **Banco PAN Java Developers** da DIO.  
+
 
 ## Objetivos
 
@@ -22,4 +21,7 @@ O repositório apresenta a implementação de um API REST para a manipulação d
 - A API desenvolvida usa o banco de dados MySQL
 - A versão do Java adotada é a 17 (LTS)
 - A porta padrão do servidor web (tomcat) foi definida para a 8081 no application.properties
+- Na classe ClienteServiceImpl foi criado um método para obter o endereço de determinado cliente. Tal método é adotado nas operações de cadastro e atualização de clientes
+- A interface EnderecoRepository apresenta o método personalizado findByCep para recuperados os dados de endereço pelo cep
+- O retorno das operações da classe ClienteRestController foram incrementados e adotam a classe ResponseEntity para especificar os status das requisições realizadas
 
