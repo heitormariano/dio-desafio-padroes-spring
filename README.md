@@ -19,6 +19,7 @@ O repositório apresenta a implementação de um API REST para a manipulação d
 
 - A API desenvolvida usa o banco de dados MySQL
 - A versão do Java adotada é a 17 (LTS)
+- As anotações do Lombok foram usados nas entidades Cliente e Endereço para reduzir a definição explícita de getters, setters, construtores e outros métodos.
 - A porta padrão do servidor web (tomcat) foi definida para a 8081 no application.properties
 - Na classe **ClienteServiceImpl** foi criado um método para recuperar o endereço de determinado cliente. Tal método é adotado nas operações de cadastro e atualização de clientes
 - A interface **EnderecoRepository** apresenta o método personalizado findByCep
