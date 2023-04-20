@@ -11,7 +11,7 @@ O repositório apresenta a implementação de um API REST para a manipulação d
 - Conhecer na prática determinados padrões empregados pelo Spring Boot
   - Singleton: anotações @Bean e @Autowired
   - Strategy: anotações @Service e @Repository
-  - Facade: criação da API REST citada adotando o padrão em questão.
+  - Facade: criação da API REST, adotando padrão mencionado
     - A implementação visa abstrair a complexidade das funcionalidades do Spring Data JPA e do serviço ViaCEP (openfeign)
 - Testar os serviços (endpoints) da API por meio do Postman
 
