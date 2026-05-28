@@ -8,11 +8,25 @@ O repositório apresenta a implementação de um API REST para a manipulação d
 ## Objetivos
 
 - Definir estrutura do projeto (pacotes específicos e suas entidades)
-- Conhecer na prática determinados padrões empregados pelo Spring Boot
-  - Singleton: anotações @Bean e @Autowired
-  - Strategy: anotações @Service e @Repository
-  - Facade: criação da API REST, adotando padrão mencionado
-    - A implementação visa abstrair a complexidade das funcionalidades do Spring Data JPA e do serviço ViaCEP (openfeign)
+- Conhecer na prática alguns padrões e conceitos utilizados pelo Spring Boot:
+  - Singleton:
+    - gerenciamento de beans pelo Spring através de anotações como @Bean, @Service e @Repository.
+
+  - Dependency Injection (IoC):
+    - uso de @Autowired para injeção e desacoplamento de dependências.
+
+  - Strategy:
+    - utilização de interfaces e implementações para diferentes regras de negócio.
+
+  - Repository Pattern:
+    - abstração do acesso a dados utilizando Spring Data JPA e @Repository.
+
+  - Service Layer:
+    - centralização das regras de negócio com @Service.
+  
+  - Facade:
+    - simplificação do acesso a integrações externas e funcionalidades da aplicação, como o consumo da API ViaCEP com OpenFeign. 
+
 - Testar os serviços (endpoints) da API por meio do Postman
 
 ## Particularidades do projeto
